@@ -1,0 +1,11 @@
+{
+    "assigments" : [ {
+        "id": 1,
+        "text" : "First Assignment"
+      }, 
+      {
+        "id": 2,
+        "text" : "Second Assignment"
+      }
+    ]
+  }

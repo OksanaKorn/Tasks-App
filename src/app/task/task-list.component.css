@@ -1,0 +1,80 @@
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 40px 40px; 
+  }
+.tasks-container, .comments-container {
+    background-color: #FFFFFF;
+    padding: 40px 40px; 
+    width: 47%;
+    flex: 0 1 auto;
+    height: 85vh;
+    border: 2px solid #DDDAD6;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+}
+.tasks-container h2 {
+  color: #545962;
+  padding-bottom: 20px;
+}
+.tasks-container:not(h2) {
+  font-size: 22px;
+} 
+.tasks-container input {
+  height: 50px;
+  margin-right: 20px;
+}
+.add-new {
+  background-color: #00D0BF;
+  border-color: #00D0BF;
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+.delete {
+  border-color: #FF5F78;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  color: #FF5F78;
+  padding: 5px;
+}
+.active {
+  border-left: 2px solid #FF0048;
+}
+.tasks-list {
+  border-bottom: 1px solid #DDDAD6;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+.add-new-block {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.comment-count {
+  background-color: #00D0BF;
+  border-radius: 20px;
+  color: #FFFFFF;
+  padding-top: 5px;
+  font-weight: normal;
+  margin-right: 20px;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.comments-container h2 {
+  color: #545962;
+  padding-bottom: 20px;
+}
+.comments-container .cube {
+  padding: 30px 30px;
+  background-color: orange;
+  margin-right: 15px;
+  position:relative;
+}
+.comments-container .prev-comments {
+  border-bottom: 1px solid #DDDAD6;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}

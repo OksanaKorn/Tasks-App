@@ -1,0 +1,30 @@
+<div class="wrapper">
+    <div class="tasks-container">
+      <h2>Tasks</h2>
+      <div class="row add-new-block">
+        <input #newTask id="userInput" placeholder="type your task here..." class="col-8">
+        <button (click)="createNewTask(newTask.value)" class="add-new col-3">Add new</button>
+      </div>
+      <div *ngFor="let t of tasks" class="row tasks-list">
+          <div class="task col-8" (click)="addClass($event)">{{t.task}}</div>
+          <div class="comment-count col-1">{{t.comments.length}}</div>
+          <button (click)="deleteTask($event)" class="col-2 delete">Delete</button>
+      </div>
+    </div>
+    <div class="comments-container">
+      <h2>Comments</h2>
+      <div class="row prev-comments" *ngFor="let comment of comments">
+        <div class="col-2">
+          <div class="cube"></div>
+        </div>
+        <div class="col-9">{{comment}}</div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <div class="cube" style="background-color: grey;"></div>
+        </div>
+        <textarea id="mytextarea" class="col-9" rows="4" cols="50" placeholder="press Ctrl + Enter to make comment to task..." (keyup)="addCommentToStorage($event)">
+        </textarea>
+      </div>
+    </div>
+</div>
